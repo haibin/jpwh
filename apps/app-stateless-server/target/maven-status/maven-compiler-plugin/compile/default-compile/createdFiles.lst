@@ -1,0 +1,4 @@
+org/jpwh/stateless/AuctionServiceImpl.class
+org/jpwh/SampleDataImporter.class
+org/jpwh/stateless/RemoteAuctionService.class
+org/jpwh/stateless/AuctionService.class

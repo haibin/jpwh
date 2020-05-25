@@ -1,0 +1,14 @@
+org/jpwh/dao/ItemDAO.class
+org/jpwh/model/Bid.class
+org/jpwh/model/Bid_.class
+org/jpwh/model/InvalidBidException.class
+org/jpwh/dao/ItemDAOImpl.class
+org/jpwh/dao/BidDAO.class
+org/jpwh/model/package-info.class
+org/jpwh/dao/GenericDAOImpl.class
+org/jpwh/model/Item.class
+org/jpwh/dao/GenericDAO.class
+org/jpwh/Constants.class
+org/jpwh/dao/BidDAOImpl.class
+org/jpwh/model/ItemBidSummary.class
+org/jpwh/model/Item_.class

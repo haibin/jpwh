@@ -1,0 +1,12 @@
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/dao/BidDAO.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/model/InvalidBidException.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/dao/ItemDAOImpl.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/dao/ItemDAO.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/dao/GenericDAO.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/model/package-info.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/dao/GenericDAOImpl.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/model/Item.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/Constants.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/dao/BidDAOImpl.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/model/Bid.java
+/Users/haibin/git/jpwh-2e-examples-20151103/apps/app-model/src/main/java/org/jpwh/model/ItemBidSummary.java
