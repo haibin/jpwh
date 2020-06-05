@@ -23,7 +23,9 @@ public class Item {
     @CollectionTable(name = "IMAGE")
     @OrderColumn // Enables persistent order, Defaults to IMAGES_ORDER
     @Column(name = "FILENAME")
-    protected List<String> images = new ArrayList<String>();
+    protected List<String> images = new ArrayList<>();
+
+    // getters and setters
 
     public Long getId() {
         return id;
@@ -32,10 +34,7 @@ public class Item {
     public List<String> getImages() {
         return images;
     }
-
     public void setImages(List<String> images) {
         this.images = images;
     }
-
-    // ...
 }

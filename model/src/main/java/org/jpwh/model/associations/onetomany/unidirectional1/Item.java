@@ -1,13 +1,11 @@
-package org.jpwh.model.associations.onetomany.bidirectional;
+package org.jpwh.model.associations.onetomany.unidirectional1;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import org.jpwh.model.Constants;
 
@@ -20,11 +18,10 @@ public class Item {
 
     protected String name;
 
-    @OneToMany(
-        mappedBy = "item1", // Required for bidirectional association
-        fetch = FetchType.LAZY
-    ) // The default
-    // List and Set will generate the same set of tables.
+    @OneToMany
+    @JoinColumn(
+//        nullable = false
+    )
     protected Set<Bid> bids = new HashSet<>();
 
     // constructors

@@ -9,8 +9,6 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(CategorizedItem.class)
 public abstract class CategorizedItem_ {
 
-	public static volatile SingularAttribute<CategorizedItem, Item> item;
-	public static volatile SingularAttribute<CategorizedItem, User> addedBy;
 	public static volatile SingularAttribute<CategorizedItem, Date> addedOn;
 
 }

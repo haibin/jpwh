@@ -7,10 +7,10 @@ import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
 @StaticMetamodel(Bid.class)
-public abstract class Bid_ {
+public abstract class Bid1_ {
 
+	public static volatile SingularAttribute<Bid, Item> item;
 	public static volatile SingularAttribute<Bid, BigDecimal> amount;
-	public static volatile SingularAttribute<Bid, Item> item1;
 	public static volatile SingularAttribute<Bid, Long> id;
 
 }

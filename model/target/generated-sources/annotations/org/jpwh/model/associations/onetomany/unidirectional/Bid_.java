@@ -1,4 +1,4 @@
-package org.jpwh.model.associations.onetomany.bidirectional;
+package org.jpwh.model.associations.onetomany.unidirectional;
 
 import java.math.BigDecimal;
 import javax.annotation.Generated;
@@ -9,8 +9,8 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(Bid.class)
 public abstract class Bid_ {
 
+	public static volatile SingularAttribute<Bid, Item> item;
 	public static volatile SingularAttribute<Bid, BigDecimal> amount;
-	public static volatile SingularAttribute<Bid, Item> item1;
 	public static volatile SingularAttribute<Bid, Long> id;
 
 }

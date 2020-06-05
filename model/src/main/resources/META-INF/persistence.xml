@@ -488,6 +488,22 @@
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
     </persistence-unit>
 
+    <persistence-unit name="OneToManyUnidirectionalPU">
+        <jta-data-source>myDS</jta-data-source>
+        <class>org.jpwh.model</class>
+        <class>org.jpwh.model.associations.onetomany.unidirectional.Item</class>
+        <class>org.jpwh.model.associations.onetomany.unidirectional.Bid</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    </persistence-unit>
+
+    <persistence-unit name="OneToManyUnidirectional1PU">
+        <jta-data-source>myDS</jta-data-source>
+        <class>org.jpwh.model</class>
+        <class>org.jpwh.model.associations.onetomany.unidirectional1.Item</class>
+        <class>org.jpwh.model.associations.onetomany.unidirectional1.Bid</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    </persistence-unit>
+
     <persistence-unit name="OneToManyCascadePersistPU">
         <jta-data-source>myDS</jta-data-source>
         <class>org.jpwh.model</class>

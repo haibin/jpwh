@@ -21,11 +21,13 @@ public class Item {
 
     @ElementCollection
     @CollectionTable(
-            name = "IMAGE", // Defaults to ITEM_IMAGES
-            joinColumns = @JoinColumn(name = "ITEM_ID")
+        name = "IMAGE", // Defaults to ITEM_IMAGES
+        joinColumns = @JoinColumn(name = "ITEM_ID")
     ) // Default, actually
     @Column(name = "FILENAME") // Defaults to IMAGES
-    protected Set<String> images = new HashSet<String>(); // Initialize field here
+    protected Set<String> images = new HashSet<>(); // Initialize field here
+
+    // getters and setters
 
     public Long getId() {
         return id;
@@ -34,10 +36,7 @@ public class Item {
     public Set<String> getImages() {
         return images;
     }
-
     public void setImages(Set<String> images) {
         this.images = images;
     }
-
-    // ...
 }

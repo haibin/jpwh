@@ -30,12 +30,14 @@ public class OneToManyList extends JPATest {
             Item someItem = new Item("Some Item");
             em.persist(someItem);
 
-            Bid someBid = new Bid(new BigDecimal("123.00"), someItem);
+//            Bid someBid = new Bid(new BigDecimal("123.00"), someItem);
+            Bid someBid = new Bid(new BigDecimal("123.00"));
             someItem.getBids().add(someBid);
             //someItem.getBids().add(someBid); // No persistent effect!
             em.persist(someBid);
 
-            Bid secondBid = new Bid(new BigDecimal("456.00"), someItem);
+//            Bid secondBid = new Bid(new BigDecimal("456.00"), someItem);
+            Bid secondBid = new Bid(new BigDecimal("456.00"));
             someItem.getBids().add(secondBid);
             em.persist(secondBid);
 

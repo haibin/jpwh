@@ -1,7 +1,6 @@
-package org.jpwh.model.associations.onetomany.bidirectional;
+package org.jpwh.model.associations.onetomany.unidirectional;
 
-import org.jpwh.model.Constants;
-
+import java.math.BigDecimal;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -9,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
+import org.jpwh.model.Constants;
 
 @Entity
 public class Bid {
@@ -20,7 +19,7 @@ public class Bid {
 
     @ManyToOne(fetch = FetchType.LAZY) // Defaults to EAGER
     @JoinColumn(name = "ITEM_ID", nullable = false)
-    protected Item item1;
+    protected Item item;
 
     @NotNull
     protected BigDecimal amount;
@@ -31,16 +30,16 @@ public class Bid {
 
     public Bid(BigDecimal amount, Item item) {
         this.amount = amount;
-        this.item1 = item;
+        this.item = item;
     }
 
     // getters and setters
 
     public Item getItem() {
-        return item1;
+        return item;
     }
     public void setItem(Item item) {
-        this.item1 = item;
+        this.item = item;
     }
 
     public BigDecimal getAmount() {

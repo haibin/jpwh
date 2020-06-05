@@ -1,17 +1,15 @@
 package org.jpwh.model.associations.onetomany.bidirectional;
 
-import java.math.BigDecimal;
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
-@StaticMetamodel(Bid.class)
-public abstract class Bid_ {
+@StaticMetamodel(Item1.class)
+public abstract class Item1_ {
 
-	public static volatile SingularAttribute<Bid, BigDecimal> amount;
-	public static volatile SingularAttribute<Bid, Item> item1;
-	public static volatile SingularAttribute<Bid, Long> id;
+	public static volatile SingularAttribute<Item1, String> name;
+	public static volatile SingularAttribute<Item1, Long> id;
 
 }
 

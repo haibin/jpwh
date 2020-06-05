@@ -1,6 +1,5 @@
 package org.jpwh.test.associations;
 
-
 import org.jpwh.env.JPATest;
 import org.jpwh.model.associations.onetomany.jointable.Item;
 import org.jpwh.model.associations.onetomany.jointable.User;

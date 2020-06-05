@@ -9,7 +9,6 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(Bid.class)
 public abstract class Bid_ {
 
-	public static volatile SingularAttribute<Bid, Item> item;
 	public static volatile SingularAttribute<Bid, BigDecimal> amount;
 	public static volatile SingularAttribute<Bid, Long> id;
 
