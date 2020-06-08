@@ -19,10 +19,11 @@ public class City {
     @Column(nullable =  false)
     protected String country;
 
+
+
     public String getZipcode() {
         return zipcode;
     }
-
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
@@ -30,7 +31,6 @@ public class City {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -38,7 +38,6 @@ public class City {
     public String getCountry() {
         return country;
     }
-
     public void setCountry(String country) {
         this.country = country;
     }

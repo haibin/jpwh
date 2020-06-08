@@ -22,10 +22,11 @@ public class Address {
     )
     protected City city;
 
+
+
     public String getStreet() {
         return street;
     }
-
     public void setStreet(String street) {
         this.street = street;
     }
@@ -33,7 +34,6 @@ public class Address {
     public City getCity() {
         return city;
     }
-
     public void setCity(City city) {
         this.city = city;
     }

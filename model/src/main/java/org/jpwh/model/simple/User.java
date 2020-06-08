@@ -21,49 +21,46 @@ public class User implements Serializable {
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     protected Long id;
 
-    public Long getId() {
-        return id;
-    }
-
     protected String username;
 
+    // The Address is @Embeddable, no annotation needed here...
+    protected Address homeAddress;
+
+    @Embedded // Not necessary...
+    @AttributeOverrides({
+        @AttributeOverride(name = "street",
+            column = @Column(name = "BILLING_STREET")), // NULLable!
+        @AttributeOverride(name = "zipcode",
+            column = @Column(name = "BILLING_ZIPCODE", length = 5)),
+        @AttributeOverride(name = "city",
+            column = @Column(name = "BILLING_CITY"))
+    })
+    protected Address billingAddress;
+
     public User() {
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
 
-    // The Address is @Embeddable, no annotation needed here...
-    protected Address homeAddress;
-
     public Address getHomeAddress() {
         return homeAddress;
     }
-
     public void setHomeAddress(Address homeAddress) {
         this.homeAddress = homeAddress;
     }
 
-    @Embedded // Not necessary...
-    @AttributeOverrides({
-            @AttributeOverride(name = "street",
-                    column = @Column(name = "BILLING_STREET")), // NULLable!
-            @AttributeOverride(name = "zipcode",
-                    column = @Column(name = "BILLING_ZIPCODE", length = 5)),
-            @AttributeOverride(name = "city",
-                    column = @Column(name = "BILLING_CITY"))
-    })
-    protected Address billingAddress;
-
     public Address getBillingAddress() {
         return billingAddress;
     }
-
     public void setBillingAddress(Address billingAddress) {
         this.billingAddress = billingAddress;
     }

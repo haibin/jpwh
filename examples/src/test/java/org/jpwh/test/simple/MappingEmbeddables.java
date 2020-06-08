@@ -40,6 +40,10 @@ public class MappingEmbeddables extends JPATest {
             tx.commit();
             em.close();
 
+
+
+
+
             tx.begin();
             em = JPA.createEntityManager();
 

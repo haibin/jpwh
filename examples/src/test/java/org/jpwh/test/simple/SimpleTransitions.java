@@ -131,9 +131,6 @@ public class SimpleTransitions extends JPATest {
                 Item itemA = em.find(Item.class, ITEM_ID);
                 Item itemB = em.find(Item.class, ITEM_ID); // Repeatable read
 
-                System.out.println("******* itemA: " + itemA);
-                System.out.println("******* itemB: " + itemB);
-
                 assertTrue(itemA == itemB);
                 assertTrue(itemA.equals(itemB));
                 assertTrue(itemA.getId().equals(itemB.getId()));

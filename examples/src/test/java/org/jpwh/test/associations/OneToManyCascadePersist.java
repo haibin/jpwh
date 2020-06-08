@@ -37,8 +37,9 @@ public class OneToManyCascadePersist extends JPATest {
             someItem.getBids().add(secondBid);
 
             tx.commit(); // Dirty checking, SQL execution
-
             em.close();
+
+
 
             Long ITEM_ID = someItem.getId();
 
@@ -47,15 +48,23 @@ public class OneToManyCascadePersist extends JPATest {
 
             Item item = em.find(Item.class, ITEM_ID);
             assertEquals(item.getBids().size(), 2);
-
+            // Remove the bids one by one.
             for (Bid bid : item.getBids()) {
                 em.remove(bid);
             }
-
+            // Remove the item.
             em.remove(item);
+
+            // Even after deleting bids from the DB, it's still there in memory.
+            assertEquals(item.getBids().size(), 2);
+            // Even after deleting the item from the DB, the item is still there in memory.
+            // item id: 1000.
+            System.out.println("******** item id: " + item.getId());
 
             tx.commit();
             em.close();
+
+
 
             tx.begin();
             em = JPA.createEntityManager();

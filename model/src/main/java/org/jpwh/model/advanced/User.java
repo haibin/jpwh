@@ -15,16 +15,18 @@ public class User {
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     protected Long id;
 
+    protected Address address;
+
+
+
+
     public Long getId() {
         return id;
     }
 
-    protected Address address;
-
     public Address getAddress() {
         return address;
     }
-
     public void setAddress(Address address) {
         this.address = address;
     }

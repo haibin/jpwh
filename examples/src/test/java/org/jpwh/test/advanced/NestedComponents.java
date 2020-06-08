@@ -44,6 +44,10 @@ public class NestedComponents extends JPATest {
             tx.commit();
             em.close();
 
+
+
+
+
             tx.begin();
             em = JPA.createEntityManager();
 
